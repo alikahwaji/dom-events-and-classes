@@ -15,6 +15,7 @@ function bindEventListeners (dots) {
     dots[i].addEventListener('contextmenu', makeBlue)
     dots[i].addEventListener('contextmenu'), hide)
 }
+}
 
 function makeGreen (evt) {
   evt.preventDefault()
@@ -36,9 +37,7 @@ function hide (evt) {
 }
 function updateCounts () {
   var totals = {
-    blue: 0,
-    green: 0,
-    invisible: 0
+bindEventListeners(document.getElementsByClassName('board')[0].children)
   }
 
   // WRITE CODE HERE TO COUNT BLUE, GREEN, AND INVISIBLE DOTS
