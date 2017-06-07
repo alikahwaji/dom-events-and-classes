@@ -13,14 +13,9 @@ function bindEventListeners (dots) {
     // The first one is provided for you
     dots[i].addEventListener('contextmenu', makeGreen)
     dots[i].addEventListener('click', makeBlue)
-<<<<<<< HEAD
-    dots[i].addEventListener('dbclick'), hide)
-}
-=======
     dots[i].addEventListener('dblclick', hide)
 
   }
->>>>>>> 09e0b880dd685f86d711071b793b5ab31f6d7ca9
 }
 
 function makeGreen (evt) {
@@ -47,31 +42,6 @@ function makeBlue(evt){
   updateCounts()
 }
 // CREATE FUNCTION hide HERE
-<<<<<<< HEAD
-function hide (evt) {
-  //evt.preventDefault()
-  evt.target.classList.toggle('invisible')
-  updateCounts ()
-}
-function updateCounts () {
-  var totals = {
-blue:0,
-green:0,
-invisible:0
-  }
-
-  // WRITE CODE HERE TO COUNT BLUE, GREEN, AND INVISIBLE DOTS
-var dots =document.getElementsByClassName("board")[0].children;
-for (var i =0 ; i < dots.length;i++){
-  if(dots[i].children.contains("blue")){
-    total.blue +=1;
-  } else if (dots[i].children.contains("green")){
-    total.green +=1;
-  } else if (dots[i].children.contains("invisible")){
-    total.invisible +=1;
-  }
-}
-=======
 function hide (evt){
   evt.target.classList.toggle('invisible')
   if(evt.target.classList.contains('blue')){
@@ -106,7 +76,6 @@ function updateCounts () {
  }
   // By adding else if's instead of Ifs it means only one property can be applied to the subject. however it locks onto first priority in this order; blue, green, invisible.
 
->>>>>>> 09e0b880dd685f86d711071b793b5ab31f6d7ca9
   // Once you've done the counting, this function will update the display
   displayTotals(totals)
 }
